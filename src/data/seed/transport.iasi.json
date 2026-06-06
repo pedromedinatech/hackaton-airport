@@ -1,0 +1,86 @@
+[
+  {
+    "id": "rideshare",
+    "mode": "rideshare",
+    "title": {
+      "en": "Book a Bolt or an Uber",
+      "ro": "Comandă un Bolt sau un Uber"
+    },
+    "etaMin": 15,
+    "priceFrom": 22,
+    "emoji": "📱",
+    "gradient": ["#0B2E1E", "#00C389"],
+    "layout": "buttons",
+    "buttons": [
+      { "label": "Bolt", "href": "#", "bg": "#1DBF5E", "fg": "#FFFFFF", "logoSrc": "/logos/bolt.png" },
+      { "label": "Uber", "href": "#", "bg": "#000000", "fg": "#FFFFFF", "logoSrc": "/logos/uber.png" }
+    ],
+    "steps": { "en": [], "ro": [] }
+  },
+  {
+    "id": "taxi",
+    "mode": "taxi",
+    "etaMin": 15,
+    "priceFrom": 30,
+    "emoji": "🚕",
+    "emojiSrc": "/logos/taxi-emoji.png",
+    "gradient": ["#4A3A00", "#F4C20D"],
+    "steps": {
+      "en": [
+        "Exit the arrivals hall and head outside.",
+        "Take a yellow taxi.",
+        "15 min to City Center."
+      ],
+      "ro": [
+        "Ieși din zona Sosiri și mergi afară.",
+        "Ia un taxi galben.",
+        "15 min până în centrul orașului."
+      ]
+    },
+    "note": {
+      "en": "Ask for the meter ('aparat') to be switched on.",
+      "ro": "Cere să pornească aparatul de taxat."
+    }
+  },
+  {
+    "id": "bus",
+    "mode": "bus",
+    "etaMin": 35,
+    "priceFrom": 3,
+    "badge": "CTP",
+    "emoji": "🚌",
+    "emojiSrc": "/logos/bus-emoji.png",
+    "gradient": ["#0F2A4A", "#2C7BE5"],
+    "layout": "bus",
+    "appButton": { "label": "24pay", "href": "#", "bg": "#1A1A1A", "fg": "#F5C518", "logoSrc": "/logos/24pay.png" },
+    "steps": {
+      "en": [
+        "Exit arrivals and turn right — 5 min walk to the bus stop.",
+        "Take bus line 50 to the city center.",
+        "Pay with credit card inside the bus, with the 24pay app, or at the ticket machine (cash) near the stop."
+      ],
+      "ro": [
+        "Ieși din Sosiri și întoarce-te la dreapta — 5 min pe jos până la stația de autobuz.",
+        "Ia autobuzul liniei 50 spre centrul orașului.",
+        "Plătește cu cardul de credit în autobuz, cu aplicația 24pay sau la mașina de bilete (numerar) lângă stație."
+      ]
+    }
+  },
+  {
+    "id": "car_rental",
+    "mode": "car_rental",
+    "etaMin": 12,
+    "priceFrom": 130,
+    "emoji": "🚗",
+    "gradient": ["#1A1A2E", "#5A5AE0"],
+    "layout": "logos",
+    "logos": [
+      { "label": "Sixt",       "href": "#", "bg": "#FF6600", "fg": "#FFFFFF", "logoSrc": "/logos/sixt.png" },
+      { "label": "Enterprise", "href": "#", "bg": "#007A3D", "fg": "#FFFFFF", "logoSrc": "/logos/enterprise.png" },
+      { "label": "Alamo",      "href": "#", "bg": "#003DA5", "fg": "#FFD100", "logoSrc": "/logos/alamo.png" },
+      { "label": "Hertz",      "href": "#", "bg": "#FFD700", "fg": "#1A1A1A", "logoSrc": "/logos/hertz.png" },
+      { "label": "Avis",       "href": "#", "bg": "#CC0000", "fg": "#FFFFFF", "logoSrc": "/logos/avis.png" }
+    ],
+    "steps": { "en": [], "ro": [] }
+  }
+]

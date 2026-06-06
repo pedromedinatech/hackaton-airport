@@ -1,0 +1,353 @@
+[
+  {
+    "id": "palatul-culturii",
+    "type": "museum",
+    "title": "Palatul Culturii",
+    "summary": {
+      "en": "The neo-Gothic landmark of Iași, home to four museums and the famous chiming clock tower.",
+      "ro": "Reperul neogotic al Iașiului, găzduind patru muzee și celebrul turn cu ceas."
+    },
+    "interests": ["culture", "art"],
+    "priceFrom": 30,
+    "distanceKm": 0.5,
+    "area": "Centru",
+    "rating": 4.8,
+    "gradient": ["#0F1E36", "#1E3A5F"],
+    "emoji": "🏰",
+    "address": "Piața Ștefan cel Mare 1",
+    "opensHour": 10,
+    "closesHour": 18
+  },
+  {
+    "id": "candlelight-coldplay",
+    "type": "concert",
+    "title": "Candlelight: Coldplay & Imagine Dragons",
+    "summary": {
+      "en": "An enchanting candlelit tribute to Coldplay and Imagine Dragons at the iconic Palatul Culturii.",
+      "ro": "Un omagiu magic la lumânări adus lui Coldplay și Imagine Dragons la iconicul Palat al Culturii."
+    },
+    "interests": ["music", "culture"],
+    "priceFrom": 120,
+    "distanceKm": 0.5,
+    "area": "Centru",
+    "rating": 5.0,
+    "gradient": ["#1A0A3A", "#6B21A8"],
+    "emoji": "🕯️",
+    "address": "Palatul Culturii, Piața Ștefan cel Mare 1",
+    "startsAt": "2026-06-07T20:00:00"
+  },
+  {
+    "id": "candlelight-vivaldi",
+    "type": "concert",
+    "title": "Candlelight: Vivaldi's Four Seasons",
+    "summary": {
+      "en": "Experience Vivaldi's masterpiece surrounded by hundreds of candles in the Cultural Palace.",
+      "ro": "Trăiește capodopera lui Vivaldi înconjurat de sute de lumânări în Palatul Culturii."
+    },
+    "interests": ["music", "culture"],
+    "priceFrom": 120,
+    "distanceKm": 0.5,
+    "area": "Centru",
+    "rating": 4.8,
+    "gradient": ["#1A0820", "#9333EA"],
+    "emoji": "🎻",
+    "address": "Palatul Culturii, Piața Ștefan cel Mare 1",
+    "startsAt": "2026-06-07T22:00:00"
+  },
+  {
+    "id": "candlelight-zimmer",
+    "type": "concert",
+    "title": "Candlelight: Hans Zimmer Tribute",
+    "summary": {
+      "en": "Cinematic masterpieces from The Lion King, Gladiator and Interstellar, performed by candlelight.",
+      "ro": "Capodopere cinematografice din Regele Leu, Gladiator și Interstellar, la lumina lumânărilor."
+    },
+    "interests": ["music", "culture"],
+    "priceFrom": 115,
+    "distanceKm": 0.5,
+    "area": "Centru",
+    "rating": 4.8,
+    "gradient": ["#0A1A2A", "#1E40AF"],
+    "emoji": "🎬",
+    "address": "Palatul Culturii, Piața Ștefan cel Mare 1",
+    "startsAt": "2026-06-14T20:00:00"
+  },
+  {
+    "id": "teatrul-national",
+    "type": "event",
+    "title": "Teatrul Național Vasile Alecsandri",
+    "summary": {
+      "en": "Tonight's performance at the oldest national theatre in Romania, a Baroque jewel.",
+      "ro": "Spectacolul de diseară la cel mai vechi teatru național din România, o bijuterie barocă."
+    },
+    "interests": ["culture", "music"],
+    "priceFrom": 60,
+    "distanceKm": 0.8,
+    "area": "Centru",
+    "rating": 4.7,
+    "gradient": ["#2A1A4A", "#7C3AED"],
+    "emoji": "🎭",
+    "address": "Strada Agatha Bârsescu 18",
+    "startsAt": "2026-06-05T19:00:00"
+  },
+  {
+    "id": "filarmonica-moldova",
+    "type": "concert",
+    "title": "Filarmonica Moldova",
+    "summary": {
+      "en": "An evening symphony concert by the Moldova State Philharmonic Orchestra.",
+      "ro": "Un concert simfonic de seară susținut de Orchestra Filarmonicii de Stat Moldova."
+    },
+    "interests": ["music", "culture"],
+    "priceFrom": 50,
+    "distanceKm": 1.0,
+    "area": "Centru",
+    "rating": 4.6,
+    "gradient": ["#1A1140", "#5B3FD6"],
+    "emoji": "🎵",
+    "address": "Strada Cuza Vodă 29",
+    "startsAt": "2026-06-05T19:30:00"
+  },
+  {
+    "id": "jazz-palas",
+    "type": "concert",
+    "title": "Summer Jazz Night @ Palas",
+    "summary": {
+      "en": "Open-air jazz under the lights in the Palas gardens — drinks and live trio.",
+      "ro": "Jazz în aer liber sub lumini în grădinile Palas — băuturi și trio live."
+    },
+    "interests": ["music"],
+    "priceFrom": 40,
+    "distanceKm": 1.1,
+    "area": "Palas",
+    "rating": 4.5,
+    "gradient": ["#3A1A4A", "#9333EA"],
+    "emoji": "🎷",
+    "address": "Palas Mall Gardens",
+    "startsAt": "2026-06-05T21:00:00"
+  },
+  {
+    "id": "gradina-botanica",
+    "type": "park",
+    "title": "Grădina Botanică Anastasie Fătu",
+    "summary": {
+      "en": "Romania's largest botanical garden — 100 ha of roses, greenhouses and quiet trails.",
+      "ro": "Cea mai mare grădină botanică din România — 100 ha de trandafiri, sere și alei liniștite."
+    },
+    "interests": ["nature", "culture"],
+    "priceFrom": 15,
+    "distanceKm": 3.2,
+    "area": "Copou",
+    "rating": 4.7,
+    "gradient": ["#0B3D2E", "#14B88A"],
+    "emoji": "🌿",
+    "address": "Strada Dumbrava Roșie 7-9",
+    "opensHour": 9,
+    "closesHour": 20
+  },
+  {
+    "id": "parcul-copou",
+    "type": "park",
+    "title": "Parcul Copou",
+    "summary": {
+      "en": "The oldest park in Iași and Eminescu's linden tree — a romantic evening stroll.",
+      "ro": "Cel mai vechi parc din Iași și teiul lui Eminescu — o plimbare romantică de seară."
+    },
+    "interests": ["nature"],
+    "distanceKm": 1.5,
+    "area": "Copou",
+    "rating": 4.6,
+    "gradient": ["#14401F", "#3FAE5A"],
+    "emoji": "🌳",
+    "address": "Bulevardul Carol I",
+    "opensHour": 6,
+    "closesHour": 23
+  },
+  {
+    "id": "trei-ierarhi",
+    "type": "landmark",
+    "title": "Mănăstirea Trei Ierarhi",
+    "summary": {
+      "en": "A 17th-century monastery wrapped in intricate stone lacework, unique in Europe.",
+      "ro": "O mănăstire din secolul XVII îmbrăcată în dantelărie de piatră, unică în Europa."
+    },
+    "interests": ["culture", "art"],
+    "distanceKm": 0.6,
+    "area": "Centru",
+    "rating": 4.8,
+    "gradient": ["#3A2A12", "#B08940"],
+    "emoji": "⛪",
+    "address": "Bulevardul Ștefan cel Mare și Sfânt 28",
+    "opensHour": 8,
+    "closesHour": 20
+  },
+  {
+    "id": "muzeul-unirii",
+    "type": "museum",
+    "title": "Muzeul Unirii",
+    "summary": {
+      "en": "The elegant former royal residence telling the story of Romania's 1859 union.",
+      "ro": "Eleganta fostă reședință domnească ce spune povestea Unirii din 1859."
+    },
+    "interests": ["culture"],
+    "priceFrom": 20,
+    "distanceKm": 0.7,
+    "area": "Centru",
+    "rating": 4.5,
+    "gradient": ["#14233F", "#3B6CA8"],
+    "emoji": "🏛️",
+    "address": "Strada Alexandru Lăpușneanu 14",
+    "opensHour": 10,
+    "closesHour": 17
+  },
+  {
+    "id": "galeria-cupola",
+    "type": "gallery",
+    "title": "Galeria de Artă Cupola",
+    "summary": {
+      "en": "Contemporary Iași painters and sculptors in an intimate downtown gallery.",
+      "ro": "Pictori și sculptori contemporani din Iași într-o galerie intimă din centru."
+    },
+    "interests": ["art", "culture"],
+    "distanceKm": 0.9,
+    "area": "Centru",
+    "rating": 4.4,
+    "gradient": ["#2B1530", "#A24FB0"],
+    "emoji": "🖼️",
+    "address": "Strada Cuza Vodă 12",
+    "opensHour": 10,
+    "closesHour": 18
+  },
+  {
+    "id": "crama-bucium",
+    "type": "winery",
+    "title": "Crama Bucium",
+    "summary": {
+      "en": "Hillside cellar on the edge of Iași — tastings of Fetească and aromatic whites.",
+      "ro": "Cramă pe dealurile de la marginea Iașiului — degustări de Fetească și albe aromate."
+    },
+    "interests": ["wine", "food"],
+    "priceFrom": 90,
+    "distanceKm": 6.5,
+    "area": "Bucium",
+    "rating": 4.5,
+    "gradient": ["#3A0F1C", "#9E2B45"],
+    "emoji": "🍷",
+    "address": "Șoseaua Bucium 145",
+    "opensHour": 11,
+    "closesHour": 22
+  },
+  {
+    "id": "gramma-wines",
+    "type": "winery",
+    "title": "Gramma Wines",
+    "summary": {
+      "en": "Boutique winery famous for its bold reds and a relaxed tasting terrace.",
+      "ro": "Cramă boutique faimoasă pentru roșurile puternice și o terasă de degustare relaxată."
+    },
+    "interests": ["wine", "food"],
+    "priceFrom": 80,
+    "distanceKm": 7.0,
+    "area": "Bucium",
+    "rating": 4.6,
+    "gradient": ["#3F0F22", "#B23A5A"],
+    "emoji": "🍷",
+    "address": "Bucium hills",
+    "opensHour": 12,
+    "closesHour": 22
+  },
+  {
+    "id": "cotnari-cellar",
+    "type": "winery",
+    "title": "Crama Cotnari",
+    "summary": {
+      "en": "A day trip to legendary Cotnari — taste the sweet golden Grasă de Cotnari.",
+      "ro": "O excursie de o zi la legendarul Cotnari — degustă dulcea Grasă de Cotnari."
+    },
+    "interests": ["wine"],
+    "priceFrom": 120,
+    "distanceKm": 54,
+    "area": "Cotnari",
+    "rating": 4.7,
+    "gradient": ["#3A2A06", "#C9A227"],
+    "emoji": "🍇",
+    "address": "Cotnari, 54 km NW",
+    "opensHour": 10,
+    "closesHour": 18
+  },
+  {
+    "id": "bolta-rece",
+    "type": "restaurant",
+    "title": "Casa Bolta Rece",
+    "summary": {
+      "en": "Historic Moldovan tavern beloved by poets — sarmale, grilled mici and local wine.",
+      "ro": "Han moldovenesc istoric îndrăgit de poeți — sarmale, mici la grătar și vin local."
+    },
+    "interests": ["food", "culture"],
+    "priceFrom": 70,
+    "distanceKm": 1.2,
+    "area": "Țicău",
+    "rating": 4.5,
+    "gradient": ["#3A1606", "#B4541F"],
+    "emoji": "🍽️",
+    "address": "Strada Rece 10",
+    "opensHour": 12,
+    "closesHour": 23
+  },
+  {
+    "id": "trei-sarmale",
+    "type": "restaurant",
+    "title": "Trei Sarmale",
+    "summary": {
+      "en": "Iconic 18th-century inn serving Moldovan classics paired with regional wines.",
+      "ro": "Han iconic din secolul XVIII cu preparate moldovenești asociate cu vinuri din zonă."
+    },
+    "interests": ["food", "wine"],
+    "priceFrom": 95,
+    "distanceKm": 2.0,
+    "area": "Bucium",
+    "rating": 4.4,
+    "gradient": ["#3A1A06", "#C26A22"],
+    "emoji": "🥂",
+    "address": "Șoseaua Bucium 50",
+    "opensHour": 12,
+    "closesHour": 23
+  },
+  {
+    "id": "impact-hub",
+    "type": "coworking",
+    "title": "Impact Hub Iași",
+    "summary": {
+      "en": "Bright coworking and community space — fast Wi-Fi, day passes and great coffee.",
+      "ro": "Spațiu luminos de coworking și comunitate — Wi-Fi rapid, abonamente de o zi și cafea bună."
+    },
+    "interests": ["business"],
+    "priceFrom": 60,
+    "distanceKm": 1.8,
+    "area": "Centru",
+    "rating": 4.6,
+    "gradient": ["#0A1628", "#00B894"],
+    "emoji": "💻",
+    "address": "Strada Sfântul Lazăr 4",
+    "opensHour": 9,
+    "closesHour": 21
+  },
+  {
+    "id": "codecamp-iasi",
+    "type": "conference",
+    "title": "Codecamp Iași",
+    "summary": {
+      "en": "Romania's biggest tech community conference — talks, networking and recruiters.",
+      "ro": "Cea mai mare conferință a comunității tech din România — prezentări, networking și recrutori."
+    },
+    "interests": ["business", "culture"],
+    "priceFrom": 0,
+    "distanceKm": 3.0,
+    "area": "Palas Congress Hall",
+    "rating": 4.5,
+    "gradient": ["#102A43", "#2C7BE5"],
+    "emoji": "🎤",
+    "address": "Palas Congress Hall",
+    "startsAt": "2026-06-05T17:00:00"
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "Meta": {
+    "title": "AirArrival · Iași",
+    "description": "Bun venit personalizat la Iași — evenimente, cultură, gastronomie, vin și cum ajungi în oraș, chiar când aterizezi."
+  },
+  "Nav": {
+    "discover": "Descoperă",
+    "fly": "Zbor",
+    "transport": "Transport",
+    "saved": "Salvate"
+  },
+  "TopBar": {
+    "brand": "AirArrival",
+    "city": "Iași",
+    "saved": "Salvate",
+    "language": "Limbă"
+  },
+  "Offline": {
+    "message": "Ești offline — afișăm conținutul salvat"
+  },
+  "Home": {
+    "landedAt": "Tocmai ai aterizat la Iași (IAS)",
+    "personalized": "Personalizat după ora sosirii și ce e în apropiere",
+    "quickActions": "Explorează & Zboară",
+    "forYou": "Recomandate pentru tine",
+    "forYouSub": "În funcție de interesele tale și ora sosirii",
+    "trending": "Diseară în oraș",
+    "empty": "Nicio potrivire acum",
+    "emptySub": "Încearcă să elimini un filtru ca să vezi mai multe."
+  },
+  "QuickActions": {
+    "flights": "Zboruri",
+    "transport": "Transport",
+    "map": "Harta aeroportului",
+    "saved": "Salvate"
+  },
+  "Interests": {
+    "title": "Ce te interesează?",
+    "culture": "Cultură",
+    "wine": "Vin",
+    "food": "Gastronomie",
+    "music": "Muzică",
+    "business": "Business",
+    "art": "Artă",
+    "nature": "Natură"
+  },
+  "Types": {
+    "event": "Eveniment",
+    "concert": "Concert",
+    "museum": "Muzeu",
+    "winery": "Cramă",
+    "gallery": "Galerie",
+    "restaurant": "Restaurant",
+    "coworking": "Coworking",
+    "conference": "Conferință",
+    "park": "Parc",
+    "landmark": "Obiectiv"
+  },
+  "Reason": {
+    "match": "Pentru că îți place {interest}",
+    "openNow": "Deschis acum",
+    "soon": "Începe curând",
+    "nearby": "La {km} km de centru",
+    "default": "Popular printre călătorii care sosesc"
+  },
+  "Detail": {
+    "why": "De ce îți recomandăm",
+    "price": "De la",
+    "free": "Intrare liberă",
+    "hours": "Program",
+    "area": "Zonă",
+    "distance": "De la centru",
+    "save": "Salvează",
+    "saved": "Salvat",
+    "reserve": "Rezervă",
+    "reserved": "Rezervat!",
+    "reservedMsg": "Rezervare demo confirmată — adăugată în călătoria ta.",
+    "getThere": "Cum ajungi",
+    "openNow": "Deschis acum",
+    "closed": "Închis acum",
+    "rating": "rating",
+    "notFound": "Locul nu a fost găsit",
+    "back": "Înapoi"
+  },
+  "Fly": {
+    "title": "Zborul meu",
+    "arrivals": "Sosiri",
+    "departures": "Plecări",
+    "searchPlaceholder": "Caută zbor, companie sau oraș",
+    "scan": "Scanează cartea de îmbarcare",
+    "scanned": "Carte de îmbarcare detectată: {flight}",
+    "live": "Live",
+    "liveUpdates": "Actualizări în timp real",
+    "liveSub": "Urmărește zborurile de azi la Iași",
+    "services": "Servicii aeroport",
+    "baggage": "Bagaje",
+    "baggageSub": "Info bandă",
+    "map": "Harta aeroportului",
+    "mapSub": "Găsește-ți drumul",
+    "facilities": "Facilități",
+    "facilitiesSub": "Magazine & lounge",
+    "status": {
+      "on_time": "La timp",
+      "landed": "Aterizat",
+      "delayed": "Întârziat",
+      "boarding": "Îmbarcare",
+      "departed": "Plecat"
+    },
+    "gate": "Poartă",
+    "belt": "Bandă",
+    "noFlights": "Niciun zbor nu corespunde căutării",
+    "or": "SAU"
+  },
+  "Transport": {
+    "title": "Cum ajungi la Iași",
+    "subtitle": "De la Aeroportul Iași (IAS) la centru · ~8 km",
+    "min": "min",
+    "from": "de la",
+    "free": "Gratuit",
+    "rentalTitle": "Aceste companii operează la aeroportul nostru — click pentru acces direct.",
+    "modes": {
+      "tram": "Tramvai",
+      "bus": "Autobuz",
+      "taxi": "Taxi",
+      "rideshare": "Ridesharing",
+      "car_rental": "Închiriere auto"
+    }
+  },
+  "Saved": {
+    "title": "Călătoria mea",
+    "subtitle": "Locurile și evenimentele salvate",
+    "empty": "Nimic salvat încă",
+    "emptySub": "Apasă inima de pe orice loc ca să începi să-ți planifici călătoria.",
+    "browse": "Explorează Iașiul",
+    "count": "{count, plural, =0 {Niciun element} one {# element} other {# elemente}}"
+  }
+}

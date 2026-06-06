@@ -1,0 +1,9 @@
+{
+  "name": "Iași International Airport",
+  "iata": "IAS",
+  "icao": "LRIA",
+  "city": "Iași",
+  "country": "Romania",
+  "distanceToCenterKm": 8,
+  "terminals": ["T1", "T2", "T3", "T4"]
+}

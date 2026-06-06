@@ -1,0 +1,137 @@
+{
+  "Meta": {
+    "title": "AirArrival · Iași",
+    "description": "Your personalized welcome to Iași — events, culture, food, wine and how to get into the city, right when you land."
+  },
+  "Nav": {
+    "discover": "Discover",
+    "fly": "Fly",
+    "transport": "Transport",
+    "saved": "Saved"
+  },
+  "TopBar": {
+    "brand": "AirArrival",
+    "city": "Iași",
+    "saved": "Saved",
+    "language": "Language"
+  },
+  "Offline": {
+    "message": "You're offline — showing saved content"
+  },
+  "Home": {
+    "landedAt": "You just landed at Iași (IAS)",
+    "personalized": "Personalized by your arrival time and what's nearby",
+    "quickActions": "Explore & Fly",
+    "forYou": "Recommended for you",
+    "forYouSub": "Based on your interests and arrival time",
+    "trending": "Happening tonight",
+    "empty": "No matches right now",
+    "emptySub": "Try removing a filter to see more."
+  },
+  "QuickActions": {
+    "flights": "Flights",
+    "transport": "Transport",
+    "map": "Airport map",
+    "saved": "Saved"
+  },
+  "Interests": {
+    "title": "What are you into?",
+    "culture": "Culture",
+    "wine": "Wine",
+    "food": "Food",
+    "music": "Music",
+    "business": "Business",
+    "art": "Art",
+    "nature": "Nature"
+  },
+  "Types": {
+    "event": "Event",
+    "concert": "Concert",
+    "museum": "Museum",
+    "winery": "Winery",
+    "gallery": "Gallery",
+    "restaurant": "Restaurant",
+    "coworking": "Coworking",
+    "conference": "Conference",
+    "park": "Park",
+    "landmark": "Landmark"
+  },
+  "Reason": {
+    "match": "Because you like {interest}",
+    "openNow": "Open now",
+    "soon": "Starts soon",
+    "nearby": "{km} km from center",
+    "default": "Popular with arriving travelers"
+  },
+  "Detail": {
+    "why": "Why we recommend this",
+    "price": "From",
+    "free": "Free entry",
+    "hours": "Hours",
+    "area": "Area",
+    "distance": "From center",
+    "save": "Save",
+    "saved": "Saved",
+    "reserve": "Reserve",
+    "reserved": "Reserved!",
+    "reservedMsg": "Demo booking confirmed — added to your trip.",
+    "getThere": "How to get there",
+    "openNow": "Open now",
+    "closed": "Closed now",
+    "rating": "rating",
+    "notFound": "Place not found",
+    "back": "Back"
+  },
+  "Fly": {
+    "title": "My Flight",
+    "arrivals": "Arrivals",
+    "departures": "Departures",
+    "searchPlaceholder": "Search flight, airline or city",
+    "scan": "Scan boarding pass",
+    "scanned": "Boarding pass detected: {flight}",
+    "live": "Live",
+    "liveUpdates": "Real-time flight updates",
+    "liveSub": "Track today's flights at Iași",
+    "services": "Airport services",
+    "baggage": "Baggage",
+    "baggageSub": "Belt info",
+    "map": "Airport map",
+    "mapSub": "Find your way",
+    "facilities": "Facilities",
+    "facilitiesSub": "Shops & lounges",
+    "status": {
+      "on_time": "On time",
+      "landed": "Landed",
+      "delayed": "Delayed",
+      "boarding": "Boarding",
+      "departed": "Departed"
+    },
+    "gate": "Gate",
+    "belt": "Belt",
+    "noFlights": "No flights match your search",
+    "or": "OR"
+  },
+  "Transport": {
+    "title": "Getting to Iași",
+    "subtitle": "From Iași Airport (IAS) to the city center · ~8 km",
+    "min": "min",
+    "from": "from",
+    "free": "Free",
+    "rentalTitle": "These companies operate at our airport — click to access them directly.",
+    "modes": {
+      "tram": "Tram",
+      "bus": "Bus",
+      "taxi": "Taxi",
+      "rideshare": "Rideshare",
+      "car_rental": "Car rental"
+    }
+  },
+  "Saved": {
+    "title": "My Trip",
+    "subtitle": "Your saved places and events",
+    "empty": "Nothing saved yet",
+    "emptySub": "Tap the heart on any place to start planning your trip.",
+    "browse": "Explore Iași",
+    "count": "{count, plural, =0 {No items} one {# item} other {# items}}"
+  }
+}

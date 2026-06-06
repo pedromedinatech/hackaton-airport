@@ -1,0 +1,20 @@
+{
+  "arrivals": [
+    { "flightNo": "W6 3214", "airline": "Wizz Air", "city": "London Luton", "code": "LTN", "time": "19:45", "status": "landed", "belt": "2" },
+    { "flightNo": "OS 813", "airline": "Austrian Airlines", "city": "Vienna", "code": "VIE", "time": "20:05", "status": "landed", "belt": "1" },
+    { "flightNo": "RO 633", "airline": "TAROM", "city": "Bucharest", "code": "OTP", "time": "20:20", "status": "on_time", "belt": "2" },
+    { "flightNo": "FR 4412", "airline": "Ryanair", "city": "Bologna", "code": "BLQ", "time": "20:40", "status": "delayed", "belt": "1" },
+    { "flightNo": "H4 124", "airline": "HiSky", "city": "Memmingen", "code": "FMM", "time": "21:00", "status": "on_time", "belt": "2" },
+    { "flightNo": "W6 3061", "airline": "Wizz Air", "city": "Dortmund", "code": "DTM", "time": "21:25", "status": "on_time", "belt": "1" },
+    { "flightNo": "LH 1664", "airline": "Lufthansa", "city": "Munich", "code": "MUC", "time": "21:50", "status": "on_time", "belt": "2" }
+  ],
+  "departures": [
+    { "flightNo": "RO 632", "airline": "TAROM", "city": "Bucharest", "code": "OTP", "time": "20:35", "status": "boarding", "gate": "3" },
+    { "flightNo": "W6 3215", "airline": "Wizz Air", "city": "London Luton", "code": "LTN", "time": "20:55", "status": "boarding", "gate": "5" },
+    { "flightNo": "OS 814", "airline": "Austrian Airlines", "city": "Vienna", "code": "VIE", "time": "21:10", "status": "on_time", "gate": "2" },
+    { "flightNo": "FR 4413", "airline": "Ryanair", "city": "Bologna", "code": "BLQ", "time": "21:30", "status": "on_time", "gate": "4" },
+    { "flightNo": "W6 3062", "airline": "Wizz Air", "city": "Dortmund", "code": "DTM", "time": "22:05", "status": "on_time", "gate": "5" },
+    { "flightNo": "H4 125", "airline": "HiSky", "city": "Memmingen", "code": "FMM", "time": "22:20", "status": "delayed", "gate": "1" },
+    { "flightNo": "LH 1665", "airline": "Lufthansa", "city": "Munich", "code": "MUC", "time": "22:40", "status": "on_time", "gate": "2" }
+  ]
+}
