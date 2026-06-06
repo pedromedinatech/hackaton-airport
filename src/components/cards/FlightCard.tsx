@@ -25,9 +25,9 @@ export function FlightCard({
   const ts = useTranslations("Fly.status");
 
   return (
-    <div className="flex items-center gap-3 rounded-2xl bg-surface p-3.5 shadow-card">
+    <div className="flex items-center gap-3 rounded-2xl border border-white/[0.06] bg-surface p-3.5">
       <div className="w-12 shrink-0 text-center">
-        <p className="text-lg font-bold tabular-nums leading-none text-navy">
+        <p className="text-lg font-bold tabular-nums leading-none text-ink">
           {flight.time}
         </p>
         <p className="mt-1 text-[11px] font-semibold text-ink-faint">

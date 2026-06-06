@@ -5,9 +5,86 @@
   },
   "Nav": {
     "discover": "Descoperă",
+    "bag": "Bagajul meu",
     "fly": "Zbor",
     "transport": "Transport",
     "saved": "Salvate"
+  },
+  "Bag": {
+    "title": "Bagajul meu",
+    "subtitle": "Urmărit de la predare până la bandă — orice companie, un singur loc.",
+    "journey": "Traseu",
+    "now": "acum",
+    "trackAnother": "Urmărește alt bagaj",
+    "shareLive": "Partajează statusul live",
+    "live": {
+      "badge": "Live",
+      "journey": "Traseu",
+      "passengerBag": "Bagajul lui {name}",
+      "anonBag": "Bagaj urmărit",
+      "share": "Partajează statusul live",
+      "copied": "Link copiat",
+      "trackOwn": "Urmărește-ți bagajul tău",
+      "notFound": "Acest bagaj nu este urmărit",
+      "notFoundSub": "Linkul poate fi vechi sau numărul etichetei este greșit."
+    },
+    "wait": {
+      "title": "Cât timp ești aici",
+      "titleEta": "Cât aștepți (~{eta} min)",
+      "subtitle": "Deschise și aproape chiar acum — profită de așteptare."
+    },
+    "scan": {
+      "title": "Scanează eticheta bagajului",
+      "hint": "Îndreaptă camera spre codul de bare de pe eticheta primită de la companie. Fără aplicație, fără cont.",
+      "scanBtn": "Scanează eticheta",
+      "noCamera": "Camera indisponibilă — introdu numărul mai jos",
+      "stop": "Anulează",
+      "cameraError": "Nu am putut deschide camera. Introdu numărul manual.",
+      "or": "sau",
+      "manualLabel": "Numărul etichetei",
+      "manualPlaceholder": "Număr din 10 cifre",
+      "submit": "Urmărește",
+      "demoLabel": "Sau încearcă un traseu demo",
+      "demoTrip": "Călătoria {n}"
+    },
+    "etaLabel": "~{eta} min",
+    "beltLabel": "Banda {belt}",
+    "notFound": "Nu am găsit eticheta",
+    "notFoundSub": "Verifică numărul de 10 cifre de pe eticheta bagajului și încearcă din nou.",
+    "errorTitle": "Nu putem accesa trackerul",
+    "errorSub": "Possibil ești offline. Vom continua să încercăm.",
+    "stage": {
+      "checked_in": "Predat",
+      "loaded": "La bord",
+      "in_air": "În zbor",
+      "connection_ok": "A prins legătura",
+      "arrived": "Aterizat",
+      "on_belt": "Pe bandă",
+      "collected": "Ridicat",
+      "delayed": "Întârzie"
+    },
+    "headline": {
+      "checked_in": "Bagajul tău este predat",
+      "loaded": "Bagajul tău este la bord",
+      "in_air": "Bagajul tău zboară cu tine",
+      "connection_ok": "Bagajul tău a prins legătura",
+      "arrived": "Bagajul tău tocmai a aterizat",
+      "on_belt": "Bagajul tău este pe bandă",
+      "collected": "Ți-ai ridicat bagajul",
+      "delayed": "Bagajul tău întârzie puțin"
+    },
+    "reason": {
+      "linked": "Ți-am asociat bagajul. Urmărim fiecare pas de acum înainte.",
+      "checked_in": "Predat la ghișeu, așteaptă să fie încărcat.",
+      "loaded": "Încărcat în siguranță în aeronava ta.",
+      "in_air": "Este în cala zborului tău — relaxează-te.",
+      "connection_ok": "A schimbat avionul la timp. Partea grea s-a terminat.",
+      "arrived": "A aterizat cu tine și este descărcat.",
+      "arrivedEta": "Aproximativ {eta} min până ajunge la bandă.",
+      "onBelt": "Bagajele durează de obicei ~12 min aici. Al tău e gata.",
+      "collected": "Călătorie încheiată. Drum bun!",
+      "delayed": "Durează mai mult decât de obicei. Iată cum te ajutăm."
+    }
   },
   "TopBar": {
     "brand": "AirArrival",

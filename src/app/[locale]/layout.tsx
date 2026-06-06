@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { JetBrains_Mono } from "next/font/google";
+import { Inter, Barlow_Condensed } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -10,14 +10,18 @@ import {
 } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
-import TopBar from "@/components/layout/TopBar";
-import BottomNav from "@/components/layout/BottomNav";
-import OfflineBanner from "@/components/layout/OfflineBanner";
 
-const sans = JetBrains_Mono({
+const sans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const display = Barlow_Condensed({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -26,7 +30,7 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#1E5A6B",
+  themeColor: "#0A0F1A",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -62,15 +66,10 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={sans.variable}>
+    <html lang={locale} className={`${sans.variable} ${display.variable}`}>
       <body className="min-h-dvh bg-canvas font-sans text-ink antialiased">
         <NextIntlClientProvider messages={messages}>
-          <OfflineBanner />
-          <TopBar />
-          <main className="mx-auto w-full max-w-md px-4 pb-28 pt-4">
-            {children}
-          </main>
-          <BottomNav />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

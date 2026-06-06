@@ -2,18 +2,18 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 const TONES: Record<string, string> = {
-  event: "bg-violet-100 text-violet-700",
-  concert: "bg-fuchsia-100 text-fuchsia-700",
-  museum: "bg-sky-100 text-sky-700",
-  winery: "bg-rose-100 text-rose-700",
-  gallery: "bg-purple-100 text-purple-700",
-  restaurant: "bg-orange-100 text-orange-700",
-  coworking: "bg-emerald-100 text-emerald-700",
-  conference: "bg-blue-100 text-blue-700",
-  park: "bg-green-100 text-green-700",
-  landmark: "bg-amber-100 text-amber-700",
-  neutral: "bg-slate-100 text-slate-600",
-  accent: "bg-accent/15 text-accent-dark",
+  event: "bg-violet-950/60 text-violet-300 border border-violet-800/40",
+  concert: "bg-fuchsia-950/60 text-fuchsia-300 border border-fuchsia-800/40",
+  museum: "bg-sky-950/60 text-sky-300 border border-sky-800/40",
+  winery: "bg-rose-950/60 text-rose-300 border border-rose-800/40",
+  gallery: "bg-purple-950/60 text-purple-300 border border-purple-800/40",
+  restaurant: "bg-orange-950/60 text-orange-300 border border-orange-800/40",
+  coworking: "bg-emerald-950/60 text-emerald-300 border border-emerald-800/40",
+  conference: "bg-blue-950/60 text-blue-300 border border-blue-800/40",
+  park: "bg-green-950/60 text-green-300 border border-green-800/40",
+  landmark: "bg-amber-950/60 text-amber-300 border border-amber-800/40",
+  neutral: "bg-white/[0.06] text-ink-soft border border-white/[0.08]",
+  accent: "bg-accent/[0.12] text-accent border border-accent/20",
 };
 
 export function Badge({

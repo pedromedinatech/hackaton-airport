@@ -40,7 +40,7 @@ export default function SavedView() {
         action={
           <Link
             href="/"
-            className="mt-1 rounded-full bg-navy px-5 py-2.5 text-sm font-semibold text-white"
+            className="mt-1 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-canvas"
           >
             {t("browse")}
           </Link>

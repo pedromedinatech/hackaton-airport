@@ -34,10 +34,10 @@ export default function InterestChips() {
               onClick={() => toggle(interest)}
               aria-pressed={active}
               className={cn(
-                "min-h-[40px] shrink-0 rounded-full border px-4 text-sm font-semibold transition",
+                "min-h-[38px] shrink-0 rounded-full border px-4 text-sm font-semibold transition",
                 active
-                  ? "border-accent bg-accent text-navy"
-                  : "border-slate-200 bg-white text-ink-soft",
+                  ? "border-accent/40 bg-accent/[0.12] text-accent"
+                  : "border-white/[0.10] bg-transparent text-ink-soft hover:border-white/20",
               )}
             >
               {t(interest)}

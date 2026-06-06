@@ -15,9 +15,12 @@ const withPWA = withPWAInit({
   },
 });
 
+const isExport = process.env.NODE_ENV === "production";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  ...(isExport ? { output: "export", trailingSlash: true } : {}),
 };
 
 export default withPWA(withNextIntl(nextConfig));

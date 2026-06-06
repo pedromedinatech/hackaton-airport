@@ -5,9 +5,86 @@
   },
   "Nav": {
     "discover": "Discover",
+    "bag": "My bag",
     "fly": "Fly",
     "transport": "Transport",
     "saved": "Saved"
+  },
+  "Bag": {
+    "title": "My bag",
+    "subtitle": "Tracked from drop-off to the belt — every airline, one place.",
+    "journey": "Journey",
+    "now": "now",
+    "trackAnother": "Track another bag",
+    "shareLive": "Share live status",
+    "live": {
+      "badge": "Live",
+      "journey": "Journey",
+      "passengerBag": "{name}'s bag",
+      "anonBag": "Tracked bag",
+      "share": "Share live status",
+      "copied": "Link copied",
+      "trackOwn": "Track your own bag",
+      "notFound": "This bag isn't being tracked",
+      "notFoundSub": "The link may be old or the tag number is wrong."
+    },
+    "wait": {
+      "title": "While you're here",
+      "titleEta": "While you wait (~{eta} min)",
+      "subtitle": "Open and nearby right now — make the wait count."
+    },
+    "scan": {
+      "title": "Scan your bag tag",
+      "hint": "Point the camera at the barcode on the tag the airline gave you. No app, no sign-up.",
+      "scanBtn": "Scan tag",
+      "noCamera": "Camera not available — enter the number below",
+      "stop": "Cancel",
+      "cameraError": "Couldn't open the camera. Enter the number instead.",
+      "or": "or",
+      "manualLabel": "Bag tag number",
+      "manualPlaceholder": "10-digit tag number",
+      "submit": "Track",
+      "demoLabel": "Or try a demo journey",
+      "demoTrip": "Trip {n}"
+    },
+    "etaLabel": "~{eta} min",
+    "beltLabel": "Belt {belt}",
+    "notFound": "We couldn't find that tag",
+    "notFoundSub": "Check the 10-digit number on your bag tag and try again.",
+    "errorTitle": "Can't reach the tracker",
+    "errorSub": "You may be offline. We'll keep trying.",
+    "stage": {
+      "checked_in": "Checked in",
+      "loaded": "On board",
+      "in_air": "In the air",
+      "connection_ok": "Made the connection",
+      "arrived": "Landed",
+      "on_belt": "On the belt",
+      "collected": "Collected",
+      "delayed": "Running late"
+    },
+    "headline": {
+      "checked_in": "Your bag is checked in",
+      "loaded": "Your bag is on board",
+      "in_air": "Your bag is flying with you",
+      "connection_ok": "Your bag made the connection",
+      "arrived": "Your bag just landed",
+      "on_belt": "Your bag is on the belt",
+      "collected": "You've got your bag",
+      "delayed": "Your bag is running a little late"
+    },
+    "reason": {
+      "linked": "We've linked your bag. We'll follow every step from here.",
+      "checked_in": "Dropped at the counter, waiting to be loaded.",
+      "loaded": "Safely loaded onto your aircraft.",
+      "in_air": "It's in the hold of your flight — nothing to do but relax.",
+      "connection_ok": "It changed planes on time. The hardest part is done.",
+      "arrived": "It landed with you and is being unloaded.",
+      "arrivedEta": "About {eta} min until it reaches the belt.",
+      "onBelt": "Bags here usually take ~12 min. Yours is ready.",
+      "collected": "Trip complete. Safe travels!",
+      "delayed": "It's taking longer than usual. Here's how we'll help."
+    }
   },
   "TopBar": {
     "brand": "AirArrival",

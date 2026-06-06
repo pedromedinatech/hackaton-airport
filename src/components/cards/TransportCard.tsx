@@ -46,14 +46,11 @@ export function TransportCard({ option }: { option: TransportOption }) {
   const title = option.title ? option.title[locale] : tm(option.mode);
 
   return (
-    <article className="overflow-hidden rounded-3xl bg-surface shadow-card">
+    <article className="overflow-hidden rounded-2xl border border-white/[0.06] bg-surface">
       {/* Header */}
       <div className="flex items-center gap-3 p-4">
         <span
-          className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl overflow-hidden"
-          style={{
-            backgroundImage: `linear-gradient(135deg, ${option.gradient[0]}, ${option.gradient[1]})`,
-          }}
+          className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl overflow-hidden bg-white/[0.06]"
           aria-hidden
         >
           {option.emojiSrc ? (
@@ -83,7 +80,7 @@ export function TransportCard({ option }: { option: TransportOption }) {
 
       {/* Rideshare: two big app buttons */}
       {option.layout === "buttons" && option.buttons?.length ? (
-        <div className="border-t border-slate-100 px-4 py-3 flex gap-3">
+        <div className="border-t border-white/[0.06] px-4 py-3 flex gap-3">
           {option.buttons.map((btn) => (
             <BrandBtn key={btn.label} btn={btn} className="flex-1" />
           ))}
@@ -92,7 +89,7 @@ export function TransportCard({ option }: { option: TransportOption }) {
 
       {/* Car rental: title + logo grid */}
       {option.layout === "logos" && option.logos?.length ? (
-        <div className="border-t border-slate-100 px-4 py-4">
+        <div className="border-t border-white/[0.06] px-4 py-4">
           <p className="mb-3 text-xs text-ink-soft leading-snug">
             {t("rentalTitle")}
           </p>
@@ -107,11 +104,11 @@ export function TransportCard({ option }: { option: TransportOption }) {
       {/* Default / Bus: numbered steps */}
       {(!option.layout || option.layout === "default" || option.layout === "bus") &&
       option.steps[locale].length > 0 ? (
-        <div className="border-t border-slate-100 px-4 py-3">
+        <div className="border-t border-white/[0.06] px-4 py-3">
           <ol className="space-y-1.5">
             {option.steps[locale].map((step, i) => (
               <li key={i} className="flex gap-2 text-sm text-ink-soft">
-                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-accent/15 text-[11px] font-bold text-accent-dark">
+                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-accent/[0.12] text-[11px] font-bold text-accent">
                   {i + 1}
                 </span>
                 <span>{step}</span>

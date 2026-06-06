@@ -25,7 +25,7 @@ function SectionHeader({
   return (
     <div className="space-y-0.5">
       <h2 className="flex items-center gap-1.5 text-lg font-bold text-ink">
-        <span className="text-accent-dark" aria-hidden>
+        <span className="text-accent" aria-hidden>
           {icon}
         </span>
         {title}
@@ -39,7 +39,7 @@ function FeedSkeleton() {
   return (
     <div className="space-y-4">
       {[0, 1, 2].map((i) => (
-        <div key={i} className="overflow-hidden rounded-3xl bg-surface shadow-card">
+        <div key={i} className="overflow-hidden rounded-2xl border border-white/[0.06] bg-surface">
           <Skeleton className="h-40 w-full rounded-none" />
           <div className="space-y-2 p-4">
             <Skeleton className="h-4 w-2/3" />

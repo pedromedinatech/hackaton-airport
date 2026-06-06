@@ -19,20 +19,20 @@ export default function ArrivalContextStrip() {
   }, []);
 
   return (
-    <section className="rounded-3xl bg-navy p-5 text-white shadow-card">
+    <section className="rounded-2xl border border-accent/20 bg-accent/[0.06] p-5">
       <div className="flex items-center gap-3">
         <span
-          className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-accent text-navy"
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-accent/[0.15] text-accent"
           aria-hidden
         >
           <PlaneLanding size={22} />
         </span>
         <div className="min-w-0">
-          <p className="text-sm font-bold">
+          <p className="text-sm font-bold text-ink">
             {t("landedAt")}
             {time ? ` · ${time}` : ""}
           </p>
-          <p className="mt-0.5 text-xs text-white/60">{t("personalized")}</p>
+          <p className="mt-0.5 text-xs text-ink-faint">{t("personalized")}</p>
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ export default function ReserveButton() {
         onClick={() => setDone(true)}
         className={cn(
           "flex min-h-[48px] w-full items-center justify-center gap-2 rounded-2xl text-sm font-bold transition active:scale-[0.98]",
-          done ? "bg-accent/15 text-accent-dark" : "bg-accent text-navy",
+          done ? "bg-accent/[0.12] text-accent border border-accent/20" : "bg-accent text-canvas",
         )}
       >
         {done ? <Check size={18} aria-hidden /> : <Ticket size={18} aria-hidden />}

@@ -19,7 +19,7 @@ export function Tabs<T extends string>({
   return (
     <div
       role="tablist"
-      className="grid gap-1 rounded-2xl bg-slate-100 p-1"
+      className="grid gap-1 rounded-2xl bg-white/[0.04] border border-white/[0.06] p-1"
       style={{ gridTemplateColumns: `repeat(${tabs.length}, 1fr)` }}
     >
       {tabs.map((tab) => {
@@ -33,7 +33,7 @@ export function Tabs<T extends string>({
             onClick={() => onChange(tab.value)}
             className={cn(
               "min-h-[40px] rounded-xl text-sm font-semibold transition",
-              active ? "bg-white text-navy shadow-sm" : "text-ink-soft",
+              active ? "bg-surface text-ink shadow-sm" : "text-ink-faint",
             )}
           >
             {tab.label}

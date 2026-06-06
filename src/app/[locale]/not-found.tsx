@@ -10,7 +10,7 @@ export default function NotFound() {
       <h1 className="text-lg font-bold text-ink">Page not found</h1>
       <Link
         href="/"
-        className="rounded-full bg-navy px-5 py-2.5 text-sm font-semibold text-white"
+        className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-canvas"
       >
         Back home
       </Link>

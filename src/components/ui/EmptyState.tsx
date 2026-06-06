@@ -12,9 +12,9 @@ export function EmptyState({
   action?: ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 rounded-3xl bg-surface px-6 py-12 text-center shadow-card">
+    <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/[0.06] bg-surface px-6 py-12 text-center">
       <div
-        className="grid h-14 w-14 place-items-center rounded-2xl bg-canvas text-ink-soft"
+        className="grid h-14 w-14 place-items-center rounded-2xl bg-white/[0.06] text-ink-soft"
         aria-hidden
       >
         {icon}

@@ -19,10 +19,10 @@ export default function QuickActions() {
         <Link
           key={key}
           href={href}
-          className="flex flex-col items-center gap-1.5 rounded-2xl bg-surface p-3 text-center shadow-card"
+          className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/[0.06] bg-surface p-3 text-center"
         >
           <span
-            className="grid h-11 w-11 place-items-center rounded-2xl bg-canvas text-navy"
+            className="grid h-11 w-11 place-items-center rounded-2xl bg-white/[0.06] text-accent"
             aria-hidden
           >
             <Icon size={20} />

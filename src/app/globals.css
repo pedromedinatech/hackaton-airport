@@ -4,8 +4,8 @@
 
 :root {
   --font-sans: ui-sans-serif, system-ui, sans-serif;
-  --navy: #1e5a6b;
-  --accent: #78bf25;
+  --navy: #0a0f1a;
+  --accent: #00d4aa;
 }
 
 html,
@@ -15,8 +15,8 @@ body {
 }
 
 body {
-  background: #f3f5fa;
-  color: #0a1628;
+  background: #0a0f1a;
+  color: #f8fafc;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }

@@ -40,8 +40,8 @@ export default function FlyView() {
 
   return (
     <div className="space-y-5">
-      <section className="space-y-3 rounded-3xl bg-surface p-4 shadow-card">
-        <div className="flex items-center gap-2 rounded-2xl border border-slate-200 px-3">
+      <section className="space-y-3 rounded-2xl border border-white/[0.06] bg-surface p-4">
+        <div className="flex items-center gap-2 rounded-2xl border border-white/[0.10] bg-white/[0.03] px-3">
           <Search size={18} className="text-ink-faint" aria-hidden />
           <input
             value={query}
@@ -54,14 +54,14 @@ export default function FlyView() {
         <button
           type="button"
           onClick={handleScan}
-          className="flex min-h-[44px] w-full items-center justify-center gap-2 rounded-2xl bg-navy text-sm font-semibold text-white active:scale-[0.99]"
+          className="flex min-h-[44px] w-full items-center justify-center gap-2 rounded-2xl bg-accent/[0.12] border border-accent/20 text-sm font-semibold text-accent active:scale-[0.99] transition"
         >
           <ScanLine size={18} aria-hidden /> {t("scan")}
         </button>
         {scanned ? (
           <p
             role="status"
-            className="flex items-center gap-1.5 rounded-xl bg-accent/15 px-3 py-2 text-xs font-semibold text-accent-dark"
+            className="flex items-center gap-1.5 rounded-xl bg-accent/[0.12] border border-accent/20 px-3 py-2 text-xs font-semibold text-accent"
           >
             <Sparkles size={14} aria-hidden /> {t("scanned", { flight: scanned })}
           </p>
@@ -109,10 +109,10 @@ export default function FlyView() {
           {SERVICES.map(({ key, Icon }) => (
             <div
               key={key}
-              className="flex flex-col items-center gap-1.5 rounded-2xl bg-surface p-3 text-center shadow-card"
+              className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/[0.06] bg-surface p-3 text-center"
             >
               <span
-                className="grid h-11 w-11 place-items-center rounded-2xl bg-canvas text-navy"
+                className="grid h-11 w-11 place-items-center rounded-2xl bg-white/[0.06] text-ink-soft"
                 aria-hidden
               >
                 <Icon size={20} />
