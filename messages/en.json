@@ -3,6 +3,19 @@
     "title": "AirArrival · Iași",
     "description": "Your personalized welcome to Iași — events, culture, food, wine and how to get into the city, right when you land."
   },
+  "Events": {
+    "title": "Events & tickets",
+    "subtitle": "What's on in Iași tonight — events, culture, food and wine."
+  },
+  "Welcome": {
+    "kicker": "Welcome to",
+    "city": "Iași",
+    "airport": "International Airport",
+    "subtitle": "Everything you need from the moment you land — track your bag, get into the city, and discover Iași.",
+    "cta": "Discover the airport",
+    "secondary": "Track my bag",
+    "note": "No sign-up · Works offline"
+  },
   "Nav": {
     "discover": "Discover",
     "bag": "My bag",
@@ -102,14 +115,33 @@
     "forYou": "Recommended for you",
     "forYouSub": "Based on your interests and arrival time",
     "trending": "Happening tonight",
+    "discoverTitle": "Discover Iași",
+    "discoverSub": "Handpicked for tonight, based on your interests.",
     "empty": "No matches right now",
-    "emptySub": "Try removing a filter to see more."
+    "emptySub": "Try removing a filter to see more.",
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "welcomeCity": "Welcome to Iași",
+    "services": "At the airport",
+    "tiles": {
+      "bag": "My bag",
+      "bagCta": "Track your bag",
+      "city": "Get to the city",
+      "citySub": "Tram, bus, taxi",
+      "flights": "Flights",
+      "flightsSub": "Arrivals & gates",
+      "events": "Events & tickets",
+      "eventsSub": "What's on in Iași",
+      "help": "Help",
+      "soon": "Soon"
+    }
   },
   "QuickActions": {
+    "bag": "My bag",
     "flights": "Flights",
     "transport": "Transport",
-    "map": "Airport map",
-    "saved": "Saved"
+    "map": "Airport map"
   },
   "Interests": {
     "title": "What are you into?",
@@ -167,6 +199,8 @@
     "scan": "Scan boarding pass",
     "scanned": "Boarding pass detected: {flight}",
     "live": "Live",
+    "upcomingArrivals": "Upcoming arrivals",
+    "viewAll": "View all",
     "liveUpdates": "Real-time flight updates",
     "liveSub": "Track today's flights at Iași",
     "services": "Airport services",

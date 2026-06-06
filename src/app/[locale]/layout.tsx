@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Inter, Barlow_Condensed } from "next/font/google";
+import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -11,17 +11,11 @@ import {
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
-const sans = Inter({
-  subsets: ["latin"],
+// Body renders Thin (100) and titles Regular (400); see globals.css + tailwind fontWeight.
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
   variable: "--font-sans",
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
-
-const display = Barlow_Condensed({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["600", "700", "800", "900"],
+  weight: ["100", "300", "400", "700"],
   display: "swap",
 });
 
@@ -30,7 +24,7 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#0A0F1A",
+  themeColor: "#0A1628",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -66,8 +60,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${sans.variable} ${display.variable}`}>
-      <body className="min-h-dvh bg-canvas font-sans text-ink antialiased">
+    <html lang={locale} className={inter.variable}>
+      <body className="min-h-dvh bg-canvas font-sans font-thin text-ink antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

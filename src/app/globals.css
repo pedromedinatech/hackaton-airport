@@ -4,8 +4,8 @@
 
 :root {
   --font-sans: ui-sans-serif, system-ui, sans-serif;
-  --navy: #0a0f1a;
-  --accent: #00d4aa;
+  --canvas: #0a1628;
+  --accent: #78bf25;
 }
 
 html,
@@ -15,10 +15,16 @@ body {
 }
 
 body {
-  background: #0a0f1a;
+  background: #0a1628;
   color: #f8fafc;
+  font-weight: 100;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* Display/title elements render Inter Regular (400). */
+.font-display {
+  font-weight: 400;
 }
 
 /* Hide scrollbars on horizontal carousels while keeping scroll */

@@ -5,20 +5,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: { DEFAULT: "#0A0F1A", 800: "#0D1321", 700: "#111827" },
-        accent: { DEFAULT: "#00D4AA", dark: "#00B891", muted: "rgba(0,212,170,0.12)", ink: "#003D30" },
-        ink: { DEFAULT: "#F8FAFC", soft: "#94A3B8", faint: "#475569" },
-        surface: "#111827",
-        canvas: "#0A0F1A",
+        canvas: "#0A1628",
+        surface: { DEFAULT: "#13243D", soft: "#1B2F4E" },
+        line: "#22344F",
+        accent: { DEFAULT: "#78BF25", dark: "#5FA01E", muted: "rgba(120,191,37,0.12)", ink: "#0A1628" },
+        navy: { DEFAULT: "#1E5A6B", soft: "#256B80", deep: "#16414E" },
+        ink: { DEFAULT: "#F8FAFC", soft: "#A8B6CC", faint: "#6B7C97" },
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "var(--font-sans)", "sans-serif"],
+        display: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      // Whole app uses Inter at just two weights: Thin (100) for body, Regular
+      // (400) for anything emphasized/titles. Collapse the scale so existing
+      // font-bold/semibold/etc. utilities resolve to 400 (no synthetic bold).
+      fontWeight: {
+        thin: "100",
+        extralight: "100",
+        light: "100",
+        normal: "400",
+        medium: "400",
+        semibold: "400",
+        bold: "400",
+        extrabold: "400",
+        black: "400",
       },
       boxShadow: {
         card: "0 0 0 1px rgba(255,255,255,0.06)",
         nav: "0 -1px 0 0 rgba(255,255,255,0.06)",
-        glow: "0 0 20px rgba(0,212,170,0.15)",
+        glow: "0 8px 30px rgba(120,191,37,0.28)",
       },
       maxWidth: { md: "430px" },
       keyframes: {

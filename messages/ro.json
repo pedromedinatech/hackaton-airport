@@ -3,6 +3,19 @@
     "title": "AirArrival · Iași",
     "description": "Bun venit personalizat la Iași — evenimente, cultură, gastronomie, vin și cum ajungi în oraș, chiar când aterizezi."
   },
+  "Events": {
+    "title": "Evenimente & bilete",
+    "subtitle": "Ce se întâmplă în Iași diseară — evenimente, cultură, gastronomie și vin."
+  },
+  "Welcome": {
+    "kicker": "Bun venit la",
+    "city": "Iași",
+    "airport": "Aeroport Internațional",
+    "subtitle": "Tot ce ai nevoie din clipa în care aterizezi — urmărește-ți bagajul, ajungi în oraș și descoperi Iașiul.",
+    "cta": "Descoperă aeroportul",
+    "secondary": "Urmărește bagajul",
+    "note": "Fără cont · Funcționează offline"
+  },
   "Nav": {
     "discover": "Descoperă",
     "bag": "Bagajul meu",
@@ -102,14 +115,33 @@
     "forYou": "Recomandate pentru tine",
     "forYouSub": "În funcție de interesele tale și ora sosirii",
     "trending": "Diseară în oraș",
+    "discoverTitle": "Descoperă Iașiul",
+    "discoverSub": "Selectate pentru diseară, după interesele tale.",
     "empty": "Nicio potrivire acum",
-    "emptySub": "Încearcă să elimini un filtru ca să vezi mai multe."
+    "emptySub": "Încearcă să elimini un filtru ca să vezi mai multe.",
+    "greetingMorning": "Bună dimineața",
+    "greetingAfternoon": "Bună ziua",
+    "greetingEvening": "Bună seara",
+    "welcomeCity": "Bun venit la Iași",
+    "services": "La aeroport",
+    "tiles": {
+      "bag": "Bagajul meu",
+      "bagCta": "Urmărește-ți bagajul",
+      "city": "Ajungi în oraș",
+      "citySub": "Tramvai, autobuz, taxi",
+      "flights": "Zboruri",
+      "flightsSub": "Sosiri & porți",
+      "events": "Evenimente & bilete",
+      "eventsSub": "Ce se întâmplă în Iași",
+      "help": "Ajutor",
+      "soon": "În curând"
+    }
   },
   "QuickActions": {
+    "bag": "Bagajul meu",
     "flights": "Zboruri",
     "transport": "Transport",
-    "map": "Harta aeroportului",
-    "saved": "Salvate"
+    "map": "Harta aeroportului"
   },
   "Interests": {
     "title": "Ce te interesează?",
@@ -167,6 +199,8 @@
     "scan": "Scanează cartea de îmbarcare",
     "scanned": "Carte de îmbarcare detectată: {flight}",
     "live": "Live",
+    "upcomingArrivals": "Sosiri în curând",
+    "viewAll": "Vezi toate",
     "liveUpdates": "Actualizări în timp real",
     "liveSub": "Urmărește zborurile de azi la Iași",
     "services": "Servicii aeroport",

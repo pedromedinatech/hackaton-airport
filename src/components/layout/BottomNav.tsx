@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bus, Compass, Luggage, Plane, Star } from "lucide-react";
+import { Bus, Compass, Luggage, Plane } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
 
@@ -10,7 +10,6 @@ const ITEMS = [
   { href: "/bag", key: "bag", Icon: Luggage, exact: false },
   { href: "/fly", key: "fly", Icon: Plane, exact: false },
   { href: "/transport", key: "transport", Icon: Bus, exact: false },
-  { href: "/saved", key: "saved", Icon: Star, exact: false },
 ] as const;
 
 export default function BottomNav() {

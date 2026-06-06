@@ -11,9 +11,9 @@ function IASMark({ className }: { className?: string }) {
       className={className}
       aria-hidden
     >
-      <path d="M3,35 L10,3 L18,3 L11,35Z" fill="#00D4AA" />
-      <path d="M18,35 L27,3 L34,3 L25,35Z" fill="#00D4AA" />
-      <path d="M31,35 Q39,19 52,5 L52,14 Q41,26 39,35Z" fill="#00D4AA" />
+      <path d="M3,35 L10,3 L18,3 L11,35Z" fill="#78BF25" />
+      <path d="M18,35 L27,3 L34,3 L25,35Z" fill="#78BF25" />
+      <path d="M31,35 Q39,19 52,5 L52,14 Q41,26 39,35Z" fill="#78BF25" />
     </svg>
   );
 }

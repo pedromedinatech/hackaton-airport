@@ -7,7 +7,6 @@ import type { Locale } from "@/i18n/routing";
 import type { ScoredPlace } from "@/features/recommendations/types";
 import { primaryReason } from "@/features/recommendations/recommender";
 import { formatPrice } from "@/lib/format";
-import { SaveButton } from "./SaveButton";
 import { Badge } from "@/components/ui/Badge";
 
 function useReasonText(place: ScoredPlace): string {
@@ -82,12 +81,6 @@ export function RecommendationCard({ place }: { place: ScoredPlace }) {
           ) : null}
         </div>
       </Link>
-
-      <SaveButton
-        id={place.id}
-        label={`${td("save")} · ${place.title}`}
-        className="absolute right-3 top-3 h-9 w-9 bg-white/[0.06] hover:bg-white/[0.10] transition"
-      />
     </article>
   );
 }

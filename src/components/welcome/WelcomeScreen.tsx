@@ -1,27 +1,24 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-
-const STATS = [
-  { value: "Live", label: "Events tonight" },
-  { value: "5", label: "Ways to get around" },
-  { value: "24/7", label: "Right as you land" },
-] as const;
+import LanguageSwitch from "@/components/layout/LanguageSwitch";
 
 export function WelcomeScreen() {
+  const t = useTranslations("Welcome");
   const reduce = useReducedMotion();
 
   const container: Variants = {
     hidden: {},
     show: {
-      transition: { staggerChildren: reduce ? 0 : 0.08, delayChildren: 0.1 },
+      transition: { staggerChildren: reduce ? 0 : 0.07, delayChildren: 0.1 },
     },
   };
   const item: Variants = {
-    hidden: { opacity: 0, y: reduce ? 0 : 16 },
+    hidden: { opacity: 0, y: reduce ? 0 : 18 },
     show: {
       opacity: 1,
       y: 0,
@@ -31,7 +28,7 @@ export function WelcomeScreen() {
 
   return (
     <div className="relative flex min-h-dvh flex-col overflow-hidden bg-canvas">
-      {/* Backdrop photo */}
+      {/* Backdrop */}
       <motion.div
         className="absolute inset-0"
         initial={{ scale: reduce ? 1 : 1.08, opacity: 0 }}
@@ -47,100 +44,67 @@ export function WelcomeScreen() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        {/* Scrims for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/55 to-canvas/10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-canvas/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/75 to-canvas/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-canvas/60 via-transparent to-transparent" />
       </motion.div>
 
-      {/* Top badge */}
-      <div className="relative z-10 px-6 pt-12">
-        <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-ink backdrop-blur-md">
-          <MapPin size={12} aria-hidden />
-          IAS · Iași International
-        </span>
+      {/* Top bar */}
+      <div className="relative z-10 flex items-center justify-end px-5 pt-12">
+        <LanguageSwitch />
       </div>
 
-      {/* Bottom-anchored content */}
+      {/* Poster */}
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative z-10 mt-auto px-6 pb-10"
+        className="relative z-10 mt-auto px-5 pb-9"
       >
-        <motion.p
+        <motion.span
           variants={item}
-          className="mb-1 font-display text-lg font-semibold uppercase tracking-[0.32em] text-accent"
+          className="inline-block bg-accent px-3 py-1 font-display text-3xl uppercase leading-none tracking-tight text-accent-ink"
         >
-          Welcome to
-        </motion.p>
+          {t("kicker")}
+        </motion.span>
 
         <motion.h1
           variants={item}
-          className="font-display text-[5.5rem] font-black uppercase leading-[0.85] tracking-tight text-ink"
+          className="mt-3 font-display text-[5.5rem] uppercase leading-[0.82] tracking-tight text-ink"
         >
-          Iași
+          {t("city")}
         </motion.h1>
 
-        <motion.div
+        <motion.h2
           variants={item}
-          className="mt-1 flex items-center gap-3"
+          className="mt-1 font-display text-[2.1rem] uppercase leading-[0.95] tracking-tight text-ink/90"
         >
-          <span className="h-px w-10 bg-accent" />
-          <span className="font-display text-xl font-semibold uppercase tracking-[0.2em] text-ink-soft">
-            Romania
-          </span>
-        </motion.div>
+          {t("airport")}
+        </motion.h2>
 
         <motion.p
           variants={item}
           className="mt-5 max-w-sm text-[15px] leading-relaxed text-ink-soft"
         >
-          Events tonight, transport that actually works, and live flights —
-          everything you need the moment you step off the plane.
+          {t("subtitle")}
         </motion.p>
 
-        {/* Stats row */}
-        <motion.div
-          variants={item}
-          className="mt-7 grid grid-cols-3 gap-2"
-        >
-          {STATS.map(({ value, label }) => (
-            <div
-              key={label}
-              className="rounded-2xl border border-white/10 bg-white/[0.05] px-3 py-3 backdrop-blur-md"
-            >
-              <p className="font-display text-2xl font-extrabold leading-none text-ink">
-                {value}
-              </p>
-              <p className="mt-1.5 text-[11px] leading-tight text-ink-soft">
-                {label}
-              </p>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* CTA */}
-        <motion.div variants={item} className="mt-8 space-y-3">
-          <Link
-            href="/bag"
-            className="group flex min-h-[54px] w-full items-center justify-center gap-2 rounded-2xl bg-accent text-base font-bold text-canvas shadow-glow transition active:scale-[0.98] hover:bg-accent-dark"
-          >
-            Track my bag
-            <ArrowRight
-              size={18}
-              aria-hidden
-              className="transition-transform group-hover:translate-x-0.5"
-            />
-          </Link>
+        <motion.div variants={item} className="mt-7 space-y-3">
           <Link
             href="/"
-            className="flex min-h-[44px] w-full items-center justify-center text-sm font-medium text-ink-soft"
+            className="group flex min-h-[58px] w-full items-center justify-between rounded-full bg-accent pl-6 pr-2 text-base font-bold text-accent-ink shadow-glow transition active:scale-[0.98] hover:bg-accent-dark"
           >
-            Explore Iași instead
+            {t("cta")}
+            <span className="grid h-11 w-11 place-items-center rounded-full bg-canvas/15 transition-transform group-hover:translate-x-0.5">
+              <ArrowUpRight size={20} aria-hidden />
+            </span>
           </Link>
-          <p className="text-center text-xs text-ink-faint">
-            No sign-up needed · Works offline
-          </p>
+          <Link
+            href="/bag"
+            className="flex min-h-[44px] w-full items-center justify-center text-sm font-semibold text-ink-soft transition hover:text-ink"
+          >
+            {t("secondary")}
+          </Link>
+          <p className="text-center text-xs text-ink-faint">{t("note")}</p>
         </motion.div>
       </motion.div>
     </div>

@@ -6,7 +6,6 @@ import { Link } from "@/i18n/navigation";
 import { getPlace, PLACES } from "@/data";
 import { routing, type Locale } from "@/i18n/routing";
 import { Badge } from "@/components/ui/Badge";
-import { SaveButton } from "@/components/cards/SaveButton";
 import ReserveButton from "@/components/detail/ReserveButton";
 import { formatPrice, formatTime, hourLabel } from "@/lib/format";
 
@@ -69,11 +68,6 @@ export default async function PlacePage({
         >
           <ArrowLeft size={18} aria-hidden />
         </Link>
-        <SaveButton
-          id={place.id}
-          label={`${t("save")} · ${place.title}`}
-          className="absolute right-4 top-4 h-10 w-10 bg-white/[0.06] hover:bg-white/[0.10] transition"
-        />
         <Badge tone={place.type} className="mb-3">
           {tt(place.type)}
         </Badge>
