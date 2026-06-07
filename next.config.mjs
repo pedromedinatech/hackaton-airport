@@ -12,6 +12,10 @@ const withPWA = withPWAInit({
   reloadOnOnline: true,
   workboxOptions: {
     disableDevLogs: true,
+    // Each new deploy's service worker activates immediately and takes over open
+    // pages, so returning visitors get the fresh build instead of a stale cache.
+    skipWaiting: true,
+    clientsClaim: true,
   },
 });
 

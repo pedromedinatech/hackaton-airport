@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "AirArrival",
     description:
       "Your personalized welcome to Iași — events, culture, wine, food and transport, right when you land.",
-    start_url: "/en",
+    start_url: "/",
     scope: "/",
     display: "standalone",
     orientation: "portrait",
