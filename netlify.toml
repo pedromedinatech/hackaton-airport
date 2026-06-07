@@ -1,20 +1,2 @@
 [build]
   command = "npm run build"
-  publish = "out"
-
-# Root → welcome page
-[[redirects]]
-  from = "/"
-  to = "/en/welcome/"
-  status = 302
-
-# Fallback for SPA-style navigation within /en or /ro
-[[redirects]]
-  from = "/en/*"
-  to = "/en/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/ro/*"
-  to = "/ro/:splat"
-  status = 200
