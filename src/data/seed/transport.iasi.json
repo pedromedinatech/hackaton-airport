@@ -9,11 +9,12 @@
     "etaMin": 15,
     "priceFrom": 22,
     "emoji": "📱",
+    "hideIcon": true,
     "gradient": ["#0B2E1E", "#00C389"],
     "layout": "buttons",
     "buttons": [
-      { "label": "Bolt", "href": "#", "bg": "#1DBF5E", "fg": "#FFFFFF", "logoSrc": "/logos/bolt.png" },
-      { "label": "Uber", "href": "#", "bg": "#000000", "fg": "#FFFFFF", "logoSrc": "/logos/uber.png" }
+      { "label": "Bolt", "href": "https://bolt.eu/", "bg": "#2B9C64", "fg": "#FFFFFF", "logoSrc": "/logos/bolt.png" },
+      { "label": "Uber", "href": "https://m.uber.com/ul/?action=setPickup&pickup=my_location", "bg": "#000000", "fg": "#FFFFFF", "logoSrc": "/logos/uber.png" }
     ],
     "steps": { "en": [], "ro": [] }
   },
@@ -46,13 +47,12 @@
     "id": "bus",
     "mode": "bus",
     "etaMin": 35,
-    "priceFrom": 3,
-    "badge": "CTP",
+    "priceFrom": 4,
     "emoji": "🚌",
     "emojiSrc": "/logos/bus-emoji.png",
     "gradient": ["#0F2A4A", "#2C7BE5"],
     "layout": "bus",
-    "appButton": { "label": "24pay", "href": "#", "bg": "#1A1A1A", "fg": "#F5C518", "logoSrc": "/logos/24pay.png" },
+    "appButton": { "label": "24pay", "href": "https://www.24pay.ro/", "bg": "#000000", "fg": "#F5C518", "logoSrc": "/logos/24pay.png" },
     "steps": {
       "en": [
         "Exit arrivals and turn right — 5 min walk to the bus stop.",
@@ -75,11 +75,11 @@
     "gradient": ["#1A1A2E", "#5A5AE0"],
     "layout": "logos",
     "logos": [
-      { "label": "Sixt",       "href": "#", "bg": "#FF6600", "fg": "#FFFFFF", "logoSrc": "/logos/sixt.png" },
-      { "label": "Enterprise", "href": "#", "bg": "#007A3D", "fg": "#FFFFFF", "logoSrc": "/logos/enterprise.png" },
-      { "label": "Alamo",      "href": "#", "bg": "#003DA5", "fg": "#FFD100", "logoSrc": "/logos/alamo.png" },
-      { "label": "Hertz",      "href": "#", "bg": "#FFD700", "fg": "#1A1A1A", "logoSrc": "/logos/hertz.png" },
-      { "label": "Avis",       "href": "#", "bg": "#CC0000", "fg": "#FFFFFF", "logoSrc": "/logos/avis.png" }
+      { "label": "Sixt",       "href": "https://www.sixt.com/",       "bg": "#FFFFFF", "fg": "#1A1A1A", "logoSrc": "/logos/sixt.png" },
+      { "label": "Enterprise", "href": "https://www.enterprise.com/", "bg": "#000000", "fg": "#FFFFFF", "logoSrc": "/logos/enterprise.png" },
+      { "label": "Alamo",      "href": "https://www.alamo.com/",      "bg": "#295EAC", "fg": "#FFFFFF", "logoSrc": "/logos/alamo.png" },
+      { "label": "Hertz",      "href": "https://www.hertz.com/",      "bg": "#FFFFFF", "fg": "#1A1A1A", "logoSrc": "/logos/hertz.png" },
+      { "label": "Avis",       "href": "https://www.avis.com/",       "bg": "#FFFFFF", "fg": "#D30025", "logoSrc": "/logos/avis.png" }
     ],
     "steps": { "en": [], "ro": [] }
   }

@@ -28,6 +28,8 @@ export interface TransportOption {
   emoji: string;
   /** Path to a PNG icon in /public to replace the text emoji. */
   emojiSrc?: string;
+  /** Hide the leading icon badge in the card header. */
+  hideIcon?: boolean;
   gradient: [string, string];
   steps: { en: string[]; ro: string[] };
   note?: Localized;

@@ -8,26 +8,44 @@ import { formatPrice } from "@/lib/format";
 function BrandBtn({
   btn,
   className = "",
+  coverLogo = false,
 }: {
   btn: BrandButton;
   className?: string;
+  coverLogo?: boolean;
 }) {
+  const external = btn.href.startsWith("http");
   return (
     <a
       href={btn.href}
-      className={`flex items-center justify-center rounded-xl py-3 ${className}`}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className={`flex items-center justify-center rounded-xl border border-white/20 ${coverLogo ? "h-14 px-4 py-2" : "py-3 overflow-hidden"} ${className}`}
       style={{ backgroundColor: btn.bg }}
       aria-label={btn.label}
     >
       {btn.logoSrc ? (
-        <Image
-          src={btn.logoSrc}
-          alt={btn.label}
-          width={80}
-          height={28}
-          className="h-7 w-auto object-contain"
-          unoptimized
-        />
+        coverLogo ? (
+          <div className="relative h-full w-full">
+            <Image
+              src={btn.logoSrc}
+              alt={btn.label}
+              fill
+              className="object-contain"
+              unoptimized
+            />
+          </div>
+        ) : (
+          <Image
+            src={btn.logoSrc}
+            alt={btn.label}
+            width={80}
+            height={28}
+            className="h-7 w-auto object-contain"
+            unoptimized
+          />
+        )
+
       ) : (
         <span className="text-sm font-bold" style={{ color: btn.fg }}>
           {btn.label}
@@ -49,23 +67,25 @@ export function TransportCard({ option }: { option: TransportOption }) {
     <article className="overflow-hidden rounded-2xl border border-white/[0.06] bg-surface">
       {/* Header */}
       <div className="flex items-center gap-3 p-4">
-        <span
-          className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl overflow-hidden bg-white/[0.06]"
-          aria-hidden
-        >
-          {option.emojiSrc ? (
-            <Image
-              src={option.emojiSrc}
-              alt=""
-              width={40}
-              height={40}
-              className="h-9 w-9 object-contain"
-              unoptimized
-            />
-          ) : (
-            <span className="text-2xl">{option.emoji}</span>
-          )}
-        </span>
+        {option.hideIcon ? null : (
+          <span
+            className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl overflow-hidden bg-white/[0.06]"
+            aria-hidden
+          >
+            {option.emojiSrc ? (
+              <Image
+                src={option.emojiSrc}
+                alt=""
+                width={40}
+                height={40}
+                className="h-9 w-9 object-contain"
+                unoptimized
+              />
+            ) : (
+              <span className="text-2xl">{option.emoji}</span>
+            )}
+          </span>
+        )}
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
             <h3 className="font-bold text-ink">{title}</h3>
@@ -82,7 +102,7 @@ export function TransportCard({ option }: { option: TransportOption }) {
       {option.layout === "buttons" && option.buttons?.length ? (
         <div className="border-t border-white/[0.06] px-4 py-3 flex gap-3">
           {option.buttons.map((btn) => (
-            <BrandBtn key={btn.label} btn={btn} className="flex-1" />
+            <BrandBtn key={btn.label} btn={btn} className="flex-1" coverLogo={!!btn.logoSrc} />
           ))}
         </div>
       ) : null}
@@ -93,9 +113,14 @@ export function TransportCard({ option }: { option: TransportOption }) {
           <p className="mb-3 text-xs text-ink-soft leading-snug">
             {t("rentalTitle")}
           </p>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {option.logos.map((logo) => (
-              <BrandBtn key={logo.label} btn={logo} className="py-2.5" />
+              <BrandBtn
+                key={logo.label}
+                btn={logo}
+                className="w-[calc((100%-1rem)/3)]"
+                coverLogo={!!logo.logoSrc}
+              />
             ))}
           </div>
         </div>
@@ -118,7 +143,11 @@ export function TransportCard({ option }: { option: TransportOption }) {
 
           {/* Bus: 24pay app button */}
           {option.layout === "bus" && option.appButton ? (
-            <BrandBtn btn={option.appButton} className="mt-3 w-full" />
+            <BrandBtn
+              btn={option.appButton}
+              className="mt-3 w-full"
+              coverLogo={!!option.appButton.logoSrc}
+            />
           ) : null}
 
           {option.note ? (

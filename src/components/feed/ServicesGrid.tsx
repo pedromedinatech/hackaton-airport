@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
-import { Bus, Plane, Ticket, LifeBuoy, ArrowUpRight } from "lucide-react";
+import { Bus, Plane, Ticket, Bot, ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { useBags } from "@/hooks/useBags";
 import { useBagJourney } from "@/features/baggage/client";
@@ -111,17 +111,15 @@ export default function ServicesGrid() {
         />
       </Link>
 
-      <div className="relative cursor-default">
+      <Link href="/help" className="transition active:scale-[0.98]">
         <Tile
-          className="bg-surface-soft text-ink-soft"
-          chipClass="bg-white/[0.06]"
-          icon={<LifeBuoy size={22} />}
-          label={t("help")}
+          className="bg-surface-soft text-ink"
+          chipClass="bg-accent-muted text-accent"
+          icon={<Bot size={22} />}
+          label={t("aiAssistant")}
+          sub={t("helpSub")}
         />
-        <span className="absolute right-4 top-4 rounded-full bg-white/[0.06] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-ink-faint">
-          {t("soon")}
-        </span>
-      </div>
+      </Link>
     </div>
   );
 }

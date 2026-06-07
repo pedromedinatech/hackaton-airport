@@ -6,6 +6,9 @@
   --font-sans: ui-sans-serif, system-ui, sans-serif;
   --canvas: #0a1628;
   --accent: #78bf25;
+  /* Base tone for the animated gradient — a very deep blue-teal, near-black but
+     never a flat #000 so the viewport edges/corners never read as a void. */
+  --bg-base: #020409;
 }
 
 html,
@@ -15,11 +18,65 @@ body {
 }
 
 body {
-  background: #0a1628;
+  background: var(--bg-base);
   color: #f8fafc;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* ── Animated gradient backdrop ─────────────────────────────────────────────
+   Two oversized, fixed layers of soft radial "glows" (green-teal → blue) that
+   slowly drift via GPU transforms. Sits behind all content (negative z-index)
+   and is non-interactive. The base color + generous overscan (inset: -30%)
+   guarantee the edges never fall to black, even mid-animation. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -30%;
+  z-index: -2;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Primary mesh: teal glow upper-left, blue glow upper-right, teal lift bottom.
+   An opaque base color sits under the glows so no corner can read as black. */
+body::before {
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(42% 42% at 26% 24%, rgba(16, 150, 124, 0.30), transparent 70%),
+    radial-gradient(46% 46% at 80% 30%, rgba(24, 92, 158, 0.30), transparent 72%),
+    radial-gradient(50% 50% at 62% 88%, rgba(12, 148, 126, 0.24), transparent 72%);
+  animation: bg-drift-a 4s ease-in-out infinite alternate;
+}
+
+/* Accent mesh layered on top: a hint of brand green + a cooler blue, drifting
+   the opposite way so the motion feels organic rather than a single pan. */
+body::after {
+  z-index: -1;
+  background-image:
+    radial-gradient(40% 40% at 18% 72%, rgba(120, 191, 37, 0.12), transparent 70%),
+    radial-gradient(42% 42% at 86% 74%, rgba(30, 116, 172, 0.18), transparent 72%);
+  animation: bg-drift-b 5.5s ease-in-out infinite alternate;
+}
+
+@keyframes bg-drift-a {
+  from {
+    transform: translate3d(-11%, -8%, 0) scale(1.04);
+  }
+  to {
+    transform: translate3d(11%, 8%, 0) scale(1.24);
+  }
+}
+
+@keyframes bg-drift-b {
+  from {
+    transform: translate3d(10%, 11%, 0) scale(1.22);
+  }
+  to {
+    transform: translate3d(-10%, -11%, 0) scale(1.02);
+  }
 }
 
 /* Display/title elements render Inter Regular (400). */

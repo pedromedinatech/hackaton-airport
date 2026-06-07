@@ -5,7 +5,8 @@
   },
   "Events": {
     "title": "Events & tickets",
-    "subtitle": "What's on in Iași tonight — events, culture, food and wine."
+    "subtitle": "What's on in Iași tonight — events, culture, food and wine.",
+    "all": "All"
   },
   "Welcome": {
     "kicker": "Welcome to",
@@ -20,7 +21,9 @@
     "discover": "Discover",
     "bag": "My bag",
     "fly": "Fly",
+    "events": "Events",
     "transport": "Transport",
+    "help": "Help",
     "saved": "Saved"
   },
   "Bag": {
@@ -134,8 +137,27 @@
       "events": "Events & tickets",
       "eventsSub": "What's on in Iași",
       "help": "Help",
-      "soon": "Soon"
+      "helpSub": "Ask me anything",
+      "aiAssistant": "AI Assistant"
     }
+  },
+  "Help": {
+    "title": "AI Assistant",
+    "subtitle": "Ask me anything about Iași Airport",
+    "greeting": "Hi! I'm your AI assistant for Iași Airport. I can help with getting into the city, baggage, flights, events and more. What do you need?",
+    "suggestionsTitle": "Try asking",
+    "suggestions": {
+      "transport": "How do I get to the city center?",
+      "baggage": "Where can I track my baggage?",
+      "events": "What's on in Iași tonight?",
+      "taxi": "How much is a taxi to the center?"
+    },
+    "inputPlaceholder": "Ask about transport, baggage, events…",
+    "send": "Send",
+    "newChat": "New chat",
+    "error": "Sorry, I couldn't reach the assistant. Please try again.",
+    "offline": "You're offline. Reconnect to chat with the assistant.",
+    "disclaimer": "AI can make mistakes. Check important details."
   },
   "QuickActions": {
     "bag": "My bag",

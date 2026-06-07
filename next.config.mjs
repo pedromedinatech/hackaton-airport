@@ -15,7 +15,11 @@ const withPWA = withPWAInit({
   },
 });
 
-const isExport = process.env.NODE_ENV === "production";
+// Static export is opt-in. The AI Assistant needs a server-side API route
+// (/api/chat) to keep the Anthropic key off the client, and a static export has
+// no server runtime to serve it. Default to a normal (server-capable) build;
+// set STATIC_EXPORT=true only for a static-only deploy (the chatbot won't work).
+const isExport = process.env.STATIC_EXPORT === "true";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
